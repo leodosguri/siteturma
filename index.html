@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chat da Turma</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- LOGIN -->
+    <div class="card" id="login">
+      <h1>Entrar</h1>
+      <input id="email" type="email" placeholder="Email" />
+      <input id="senha" type="password" placeholder="Senha" />
+      <button id="btnLogin">Entrar</button>
+      <button id="btnRegister" class="ghost">Criar conta</button>
+    </div>
+
+    <!-- CHAT -->
+    <div class="card hidden" id="chat">
+      <div class="top">
+        <strong>Chat da Turma</strong>
+        <button id="btnLogout" class="ghost">Sair</button>
+      </div>
+
+      <div id="mensagens"></div>
+
+      <div class="send">
+        <input id="msg" placeholder="Digite sua mensagem..." />
+        <button id="btnSend">Enviar</button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- JS SEMPRE NO FINAL E COMO MODULE -->
+  <script type="module" src="main.js"></script>
+</body>
+</html>
